@@ -17,14 +17,14 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "src/*",
+        "src/*"
       ]
     },
     "declaration": true,
     "declarationDir": "types/"
   },
   "include": [
-    "src/**/*.ts",
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules"

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Draw Gauge</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">Samples</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <nav class="nav navbar-nav mr-auto">
+                <a class="nav-item nav-link active" data-toggle="tab" href="#tab-gauge" role="tab" aria-controls="nav-home" aria-selected="true">Gauge</a>
+            </nav>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="container-fluid" style="margin-top: 70px;">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-gauge" role="tabpanel" aria-labelledby="home-tab">
+                    <ul class="nav nav-tabs mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tab-gauge-image" role="tab" aria-controls="gauge-image-tab" aria-selected="true">Label in image</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab-gauge-html" role="tab" aria-controls="gauge-html-tab" aria-selected="true">Label as HTML</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="tab-gauge-image" role="tabpanel" aria-labelledby="gauge-image-tab">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div id="gauge1"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div id="gauge2"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div id="gauge3"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div id="gauge4"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div id="gauge5"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div id="gauge6"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-gauge-html" role="tabpanel" aria-labelledby="gauge-html-tab">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div id="gaugeHtml1"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div id="gaugeHtml2"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div id="gaugeHtml3"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div id="gaugeHtml4"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div id="gaugeHtml5"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div id="gaugeHtml6"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+        <script src="dist/sico.draw.umd.js"></script>
+        <script src="test/sample.js"></script>
+        <script src="test/sample-html.js"></script>
+        <script type="text/javascript">
+    //<![CDATA[
+
+    //]]>
+        </script>
+</body>
+
+</html>
