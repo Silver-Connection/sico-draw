@@ -40,6 +40,8 @@ export class Gauge {
             labelHtmlUseCanvasSize: false,
             labelCssBase: undefined,
             offset: 180,
+            scale: false,
+            scaleUp: false,
         };
 
     protected defaultData: IGaugeData =
@@ -144,8 +146,12 @@ export class Gauge {
         }
 
         let scaleBy = 1;
-        if (window.devicePixelRatio > 1) {
+        if (this.options.scale && window.devicePixelRatio > 1) {
             scaleBy = window.devicePixelRatio;
+            if (!this.options.scaleUp) {
+                scaleBy = 1 / window.devicePixelRatio;
+            }
+
             this.canvas.width = this.canvas.width * scaleBy;
             this.canvas.height = this.canvas.height * scaleBy;
             this.context.scale(scaleBy, scaleBy);

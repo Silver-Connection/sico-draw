@@ -14,6 +14,8 @@ export interface IGaugeConfig {
     labelHtmlUseCanvasSize?: boolean;
     labelCssBase?: string;
     offset?: number;
+    scale?: boolean;
+    scaleUp?: boolean;
 }
 export interface IGaugeData {
     value: number;
